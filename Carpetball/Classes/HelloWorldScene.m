@@ -39,12 +39,16 @@
     // Enable touch handling on scene node
     self.userInteractionEnabled = YES;
     
+    
+    
     // Create a colored background (Dark Grey)
-    CCNodeColor *background = [CCNodeColor nodeWithColor:[CCColor colorWithRed:0.2f green:0.2f blue:0.2f alpha:1.0f]];
+    
+    CCSprite *background = [CCSprite spriteWithImageNamed:@"background_iphone5_table.png"];
+    background.anchorPoint = ccp(0,0);
     [self addChild:background];
     
     // Add a sprite
-    _sprite = [CCSprite spriteWithImageNamed:@"Icon-72.png"];
+    _sprite = [CCSprite spriteWithImageNamed:@"cue.png"];
     _sprite.position  = ccp(self.contentSize.width/2,self.contentSize.height/2);
     [self addChild:_sprite];
     
