@@ -66,6 +66,10 @@
     // start spinning scene with transition
     [[CCDirector sharedDirector] replaceScene:[HelloWorldScene scene]
                                withTransition:[CCTransition transitionCrossFadeWithDuration:1.0f]];
+    // access audio object
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    // play sound effect
+    [audio playEffect:@"woodblock_hit.mp3"];
 }
 
 // -----------------------------------------------------------------------

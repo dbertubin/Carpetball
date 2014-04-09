@@ -212,10 +212,16 @@
 		E549FEEC18F3795F009E7BB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E549FEEB18F3795F009E7BB8 /* AppDelegate.m */; };
 		E549FEEF18F3795F009E7BB8 /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E549FEEE18F3795F009E7BB8 /* HelloWorldScene.m */; };
 		E549FEF218F3795F009E7BB8 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E549FEF118F3795F009E7BB8 /* IntroScene.m */; };
-		E549FEFE18F37AAF009E7BB8 /* cue.png in Resources */ = {isa = PBXBuildFile; fileRef = E549FEFB18F37AAF009E7BB8 /* cue.png */; };
 		E549FEFF18F37AAF009E7BB8 /* splash_iphone5_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E549FEFC18F37AAF009E7BB8 /* splash_iphone5_2.png */; };
 		E549FF0018F37AAF009E7BB8 /* splash_iphone5.png in Resources */ = {isa = PBXBuildFile; fileRef = E549FEFD18F37AAF009E7BB8 /* splash_iphone5.png */; };
 		E549FF0218F37B36009E7BB8 /* background_iphone5_table.png in Resources */ = {isa = PBXBuildFile; fileRef = E549FF0118F37B36009E7BB8 /* background_iphone5_table.png */; };
+		E549FF0418F38222009E7BB8 /* cue.png in Resources */ = {isa = PBXBuildFile; fileRef = E549FF0318F38222009E7BB8 /* cue.png */; };
+		E549FF0618F3A2A1009E7BB8 /* cue_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E549FF0518F3A2A1009E7BB8 /* cue_2.png */; };
+		E549FF0818F3A4D2009E7BB8 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = E549FF0718F3A4D2009E7BB8 /* click.wav */; };
+		E5608FEA18F478D3008D2C0E /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5608FE918F478D3008D2C0E /* click.mp3 */; };
+		E5608FEC18F47A67008D2C0E /* woodblock_hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5608FEB18F47A67008D2C0E /* woodblock_hit.mp3 */; };
+		E5608FEE18F47D22008D2C0E /* hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5608FED18F47D22008D2C0E /* hit.mp3 */; };
+		E5608FF018F4F84A008D2C0E /* background_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5608FEF18F4F84A008D2C0E /* background_music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -657,10 +663,16 @@
 		E549FEEE18F3795F009E7BB8 /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
 		E549FEF018F3795F009E7BB8 /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
 		E549FEF118F3795F009E7BB8 /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
-		E549FEFB18F37AAF009E7BB8 /* cue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cue.png; sourceTree = "<group>"; };
 		E549FEFC18F37AAF009E7BB8 /* splash_iphone5_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_iphone5_2.png; sourceTree = "<group>"; };
 		E549FEFD18F37AAF009E7BB8 /* splash_iphone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_iphone5.png; sourceTree = "<group>"; };
 		E549FF0118F37B36009E7BB8 /* background_iphone5_table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_iphone5_table.png; sourceTree = "<group>"; };
+		E549FF0318F38222009E7BB8 /* cue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cue.png; sourceTree = "<group>"; };
+		E549FF0518F3A2A1009E7BB8 /* cue_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cue_2.png; sourceTree = "<group>"; };
+		E549FF0718F3A4D2009E7BB8 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		E5608FE918F478D3008D2C0E /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
+		E5608FEB18F47A67008D2C0E /* woodblock_hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = woodblock_hit.mp3; sourceTree = "<group>"; };
+		E5608FED18F47D22008D2C0E /* hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit.mp3; sourceTree = "<group>"; };
+		E5608FEF18F4F84A008D2C0E /* background_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background_music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -732,8 +744,14 @@
 		E549FC5B18F3795D009E7BB8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E5608FEF18F4F84A008D2C0E /* background_music.mp3 */,
+				E5608FED18F47D22008D2C0E /* hit.mp3 */,
+				E5608FEB18F47A67008D2C0E /* woodblock_hit.mp3 */,
+				E5608FE918F478D3008D2C0E /* click.mp3 */,
+				E549FF0718F3A4D2009E7BB8 /* click.wav */,
+				E549FF0518F3A2A1009E7BB8 /* cue_2.png */,
+				E549FF0318F38222009E7BB8 /* cue.png */,
 				E549FF0118F37B36009E7BB8 /* background_iphone5_table.png */,
-				E549FEFB18F37AAF009E7BB8 /* cue.png */,
 				E549FEFC18F37AAF009E7BB8 /* splash_iphone5_2.png */,
 				E549FEFD18F37AAF009E7BB8 /* splash_iphone5.png */,
 				E549FC5C18F3795D009E7BB8 /* Default.png */,
@@ -1636,13 +1654,15 @@
 				E549FF0018F37AAF009E7BB8 /* splash_iphone5.png in Resources */,
 				E549FC6818F3795D009E7BB8 /* Icon@2x.png in Resources */,
 				E549FEFF18F37AAF009E7BB8 /* splash_iphone5_2.png in Resources */,
+				E5608FEE18F47D22008D2C0E /* hit.mp3 in Resources */,
 				E549FC7A18F3795D009E7BB8 /* Icon-Small@2x.png in Resources */,
 				E549FC6C18F3795D009E7BB8 /* Icon-72@2x.png in Resources */,
 				E549FC5D18F3795D009E7BB8 /* Default.png in Resources */,
+				E5608FF018F4F84A008D2C0E /* background_music.mp3 in Resources */,
 				E549FC6618F3795D009E7BB8 /* Icon.png in Resources */,
 				E549FC7418F3795D009E7BB8 /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
+				E549FF0418F38222009E7BB8 /* cue.png in Resources */,
 				E549FC6318F3795D009E7BB8 /* Default-Landscape~ipad.png in Resources */,
-				E549FEFE18F37AAF009E7BB8 /* cue.png in Resources */,
 				E549FF0218F37B36009E7BB8 /* background_iphone5_table.png in Resources */,
 				E549FC7818F3795D009E7BB8 /* Icon-Small.png in Resources */,
 				E549FC7618F3795D009E7BB8 /* Icon-Small-50.png in Resources */,
@@ -1650,12 +1670,16 @@
 				E549FC6A18F3795D009E7BB8 /* Icon-72.png in Resources */,
 				E549FDB818F3795E009E7BB8 /* LICENSE_cocos2d.txt in Resources */,
 				E549FC6118F3795D009E7BB8 /* Default-568h@2x.png in Resources */,
+				E5608FEA18F478D3008D2C0E /* click.mp3 in Resources */,
 				E549FC8118F3795D009E7BB8 /* iTunesArtwork in Resources */,
 				E549FC7C18F3795D009E7BB8 /* Icon-Spotlight-iOS7.png in Resources */,
+				E5608FEC18F47A67008D2C0E /* woodblock_hit.mp3 in Resources */,
+				E549FF0618F3A2A1009E7BB8 /* cue_2.png in Resources */,
 				E549FC7018F3795D009E7BB8 /* Icon-76@2x.png in Resources */,
 				E549FEE418F3795F009E7BB8 /* LICENSE_Chipmunk.txt in Resources */,
 				E549FC7E18F3795D009E7BB8 /* Icon-Spotlight-iOS7@2x.png in Resources */,
 				E549FC6E18F3795D009E7BB8 /* Icon-76.png in Resources */,
+				E549FF0818F3A4D2009E7BB8 /* click.wav in Resources */,
 				E549FE4418F3795E009E7BB8 /* ChangeLog in Resources */,
 				E549FC8318F3795D009E7BB8 /* iTunesArtwork@2x in Resources */,
 			);
@@ -2005,6 +2029,7 @@
 				E549FEF718F3795F009E7BB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E549FEF818F3795F009E7BB8 /* Build configuration list for PBXNativeTarget "Carpetball" */ = {
 			isa = XCConfigurationList;
@@ -2013,6 +2038,7 @@
 				E549FEFA18F3795F009E7BB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
