@@ -22,6 +22,7 @@
     CCSprite *_cue;
     CCPhysicsNode *_physicsWorld;
     ChipmunkSpace * _space;
+    CCSprite *_button;
     
 }
 
@@ -72,10 +73,15 @@
     //    CCActionRotateBy* actionSpin = [CCActionRotateBy actionWithDuration:1.5f angle:360];
     //    [_sprite runAction:[CCActionRepeatForever actionWithAction:actionSpin]];
     
+    _button = [CCSprite spriteWithImageNamed:@"button_2b.png"];
+    _button.positionType = CCPositionTypeNormalized;
+    _button.position = ccp(0.50f, 0.95f);
+    [self addChild:_button];
+    
     // Create a back button
-    CCButton *backButton = [CCButton buttonWithTitle:@"[ Menu ]" fontName:@"Verdana-Bold" fontSize:18.0f];
+    CCButton *backButton = [CCButton buttonWithTitle:@"Menu" fontName:@"Verdana-Bold" fontSize:18.0f];
     backButton.positionType = CCPositionTypeNormalized;
-    backButton.position = ccp(0.85f, 0.95f); // Top Right of screen
+    backButton.position = ccp(0.50f, 0.955f); // Top Right of screen
     [backButton setTarget:self selector:@selector(onBackClicked:)];
     [self addChild:backButton];
     

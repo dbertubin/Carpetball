@@ -16,7 +16,9 @@
 // -----------------------------------------------------------------------
 
 @implementation IntroScene
-
+{
+        CCSprite *_button;
+}
 // -----------------------------------------------------------------------
 #pragma mark - Create & Destroy
 // -----------------------------------------------------------------------
@@ -46,12 +48,21 @@
 //    label.position = ccp(0.5f, 0.5f); // Middle of screen
 //    [self addChild:label];
     
+    _button = [CCSprite spriteWithImageNamed:@"button_2b.png"];
+    _button.positionType = CCPositionTypeNormalized;
+    _button.position = ccp(0.50f, 0.345f);
+    [self addChild:_button];
+    
+    
     // Helloworld scene button
-    CCButton *helloWorldButton = [CCButton buttonWithTitle:@"[ Start ]" fontName:@"Verdana-Bold" fontSize:18.0f];
+    CCButton *helloWorldButton = [CCButton buttonWithTitle:@"Start" fontName:@"Verdana-Bold" fontSize:18.0f];
     helloWorldButton.positionType = CCPositionTypeNormalized;
     helloWorldButton.position = ccp(0.5f, 0.35f);
     [helloWorldButton setTarget:self selector:@selector(onSpinningClicked:)];
     [self addChild:helloWorldButton];
+    
+    
+
     
     // done
 	return self;

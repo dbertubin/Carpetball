@@ -222,6 +222,9 @@
 		E5608FEC18F47A67008D2C0E /* woodblock_hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5608FEB18F47A67008D2C0E /* woodblock_hit.mp3 */; };
 		E5608FEE18F47D22008D2C0E /* hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5608FED18F47D22008D2C0E /* hit.mp3 */; };
 		E5608FF018F4F84A008D2C0E /* background_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5608FEF18F4F84A008D2C0E /* background_music.mp3 */; };
+		E5608FF218F4FC86008D2C0E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = E5608FF118F4FC86008D2C0E /* button.png */; };
+		E5608FF418F4FE7C008D2C0E /* button_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E5608FF318F4FE7C008D2C0E /* button_2.png */; };
+		E5608FFA18F500E5008D2C0E /* button_2b.png in Resources */ = {isa = PBXBuildFile; fileRef = E5608FF918F500E5008D2C0E /* button_2b.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -673,6 +676,9 @@
 		E5608FEB18F47A67008D2C0E /* woodblock_hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = woodblock_hit.mp3; sourceTree = "<group>"; };
 		E5608FED18F47D22008D2C0E /* hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit.mp3; sourceTree = "<group>"; };
 		E5608FEF18F4F84A008D2C0E /* background_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background_music.mp3; sourceTree = "<group>"; };
+		E5608FF118F4FC86008D2C0E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		E5608FF318F4FE7C008D2C0E /* button_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_2.png; sourceTree = "<group>"; };
+		E5608FF918F500E5008D2C0E /* button_2b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_2b.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -744,6 +750,9 @@
 		E549FC5B18F3795D009E7BB8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E5608FF918F500E5008D2C0E /* button_2b.png */,
+				E5608FF318F4FE7C008D2C0E /* button_2.png */,
+				E5608FF118F4FC86008D2C0E /* button.png */,
 				E5608FEF18F4F84A008D2C0E /* background_music.mp3 */,
 				E5608FED18F47D22008D2C0E /* hit.mp3 */,
 				E5608FEB18F47A67008D2C0E /* woodblock_hit.mp3 */,
@@ -1649,6 +1658,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E549FC5F18F3795D009E7BB8 /* Default@2x.png in Resources */,
+				E5608FFA18F500E5008D2C0E /* button_2b.png in Resources */,
 				E549FC7218F3795D009E7BB8 /* Icon-120.png in Resources */,
 				E549FE7618F3795E009E7BB8 /* LICENSE_CCBReader.txt in Resources */,
 				E549FF0018F37AAF009E7BB8 /* splash_iphone5.png in Resources */,
@@ -1660,6 +1670,7 @@
 				E549FC5D18F3795D009E7BB8 /* Default.png in Resources */,
 				E5608FF018F4F84A008D2C0E /* background_music.mp3 in Resources */,
 				E549FC6618F3795D009E7BB8 /* Icon.png in Resources */,
+				E5608FF418F4FE7C008D2C0E /* button_2.png in Resources */,
 				E549FC7418F3795D009E7BB8 /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
 				E549FF0418F38222009E7BB8 /* cue.png in Resources */,
 				E549FC6318F3795D009E7BB8 /* Default-Landscape~ipad.png in Resources */,
@@ -1669,6 +1680,7 @@
 				E549FE5F18F3795E009E7BB8 /* LICENSE_Kazmath.txt in Resources */,
 				E549FC6A18F3795D009E7BB8 /* Icon-72.png in Resources */,
 				E549FDB818F3795E009E7BB8 /* LICENSE_cocos2d.txt in Resources */,
+				E5608FF218F4FC86008D2C0E /* button.png in Resources */,
 				E549FC6118F3795D009E7BB8 /* Default-568h@2x.png in Resources */,
 				E5608FEA18F478D3008D2C0E /* click.mp3 in Resources */,
 				E549FC8118F3795D009E7BB8 /* iTunesArtwork in Resources */,
