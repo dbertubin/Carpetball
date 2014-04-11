@@ -19,10 +19,15 @@
 
 @implementation HelloWorldScene
 {
+    
+    
     CCSprite *_cue;
     CCPhysicsNode *_physicsWorld;
-    ChipmunkSpace * _space;
+    cpSpace * _space;
     CCSprite *_button;
+    
+    CCPhysicsShape * _walls[4];
+    
     
 }
 
@@ -39,12 +44,58 @@
 
 - (id)init
 {
+    
     // Apple recommend assigning self with supers return value
     self = [super init];
     if (!self) return(nil);
     
     
-    _space = [[ChipmunkSpace alloc] init];
+//    _physicsWorld = [CCPhysicsNode node];
+//    _physicsWorld.debugDraw = YES; // Enable this if you want the physics shapes and joints drawn over the top of your sprites.
+//    _physicsWorld.collisionDelegate = self; // More on this below
+//    [self addChild:_physicsWorld];
+//
+//    CGSize s = [[CCDirector sharedDirector] viewSize];
+//
+//    CGPoint lowerLeft = ccp(0, 0);
+//    CGPoint lowerRight = ccp(s.width, 0);
+//
+//    CCPhysicsBody *groundBody = [CCPhysicsBody bodyWithPillFrom:lowerLeft to:lowerLeft cornerRadius:0.0f];
+//    [groundBody
+//
+//    // 3
+//    float radius = 10.0;
+//    CCPhysicsShape *groundShape = [CCPhysicsShape pillShapeFrom:lowerLeft to:lowerRight cornerRadius:radius];
+    
+    
+    // Set up the physics space
+    _space = cpSpaceNew();
+    cpSpaceSetGravity(_space, cpv(0.0f, -500.0f));
+    // Allow collsion shapes to overlap by 2 pixels.
+    // This will make contacts pop on and off less, which helps it find matching groups better.
+    cpSpaceSetCollisionSlop(_space, 2.0f);
+
+    // Add bounds around the playfield
+    {
+        cpShape *shape;
+        cpBody *staticBody = cpSpaceGetStaticBody(_space);
+        cpFloat radius = 20.0;
+        
+        // left, right, bottom, top
+        cpFloat l = 130 - radius;
+        cpFloat r = 130 + 767 + radius;
+        cpFloat b = 139 - radius;
+        cpFloat t = 139 + 1500 + radius;
+        
+        shape = cpSpaceAddShape(_space, cpSegmentShapeNew(staticBody, cpv(l, b), cpv(l, t), radius));
+
+        shape = cpSpaceAddShape(_space, cpSegmentShapeNew(staticBody, cpv(r, b), cpv(r, t), radius));
+        
+        shape = cpSpaceAddShape(_space, cpSegmentShapeNew(staticBody, cpv(l, b), cpv(r, b), radius));
+        cpShapeSetFriction(shape, 1.0f);
+        cpShapeGetBody(shape);
+    }
+    
     
     
     [[OALSimpleAudio sharedInstance] playBg:@"background_music.mp3" loop:YES];
@@ -68,7 +119,9 @@
     // Add a sprite
     _cue = [CCSprite spriteWithImageNamed:@"cue_2.png"];
     _cue.position  = ccp(self.contentSize.width/2,self.contentSize.height/2);
-    [self addChild:_cue];
+    _cue.physicsBody = [CCPhysicsBody bodyWithCircleOfRadius:_cue.contentSize.width/2.0f andCenter:_cue.anchorPointInPoints];
+    [_physicsWorld addChild:_cue];
+    
     //    // Animate sprite with action
     //    CCActionRotateBy* actionSpin = [CCActionRotateBy actionWithDuration:1.5f angle:360];
     //    [_sprite runAction:[CCActionRepeatForever actionWithAction:actionSpin]];
@@ -86,7 +139,7 @@
     [self addChild:backButton];
     
     // done
-	return self;
+    return self;
 }
 
 // -----------------------------------------------------------------------
@@ -110,7 +163,6 @@
     // Per frame update is automatically enabled, if update is overridden
     
 }
-
 // -----------------------------------------------------------------------
 
 - (void)onExit
@@ -192,6 +244,9 @@
     [[OALSimpleAudio sharedInstance] stopBg];
     
 }
+
+
+
 
 // -----------------------------------------------------------------------
 @end
