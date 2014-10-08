@@ -225,6 +225,7 @@
 		E5608FF218F4FC86008D2C0E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = E5608FF118F4FC86008D2C0E /* button.png */; };
 		E5608FF418F4FE7C008D2C0E /* button_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E5608FF318F4FE7C008D2C0E /* button_2.png */; };
 		E5608FFA18F500E5008D2C0E /* button_2b.png in Resources */ = {isa = PBXBuildFile; fileRef = E5608FF918F500E5008D2C0E /* button_2b.png */; };
+		E5C16A1D18F79E48005D1836 /* backpanel.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C16A1C18F79E48005D1836 /* backpanel.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -679,6 +680,7 @@
 		E5608FF118F4FC86008D2C0E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		E5608FF318F4FE7C008D2C0E /* button_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_2.png; sourceTree = "<group>"; };
 		E5608FF918F500E5008D2C0E /* button_2b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_2b.png; sourceTree = "<group>"; };
+		E5C16A1C18F79E48005D1836 /* backpanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backpanel.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -750,6 +752,7 @@
 		E549FC5B18F3795D009E7BB8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E5C16A1C18F79E48005D1836 /* backpanel.png */,
 				E5608FF918F500E5008D2C0E /* button_2b.png */,
 				E5608FF318F4FE7C008D2C0E /* button_2.png */,
 				E5608FF118F4FC86008D2C0E /* button.png */,
@@ -1664,6 +1667,7 @@
 				E549FF0018F37AAF009E7BB8 /* splash_iphone5.png in Resources */,
 				E549FC6818F3795D009E7BB8 /* Icon@2x.png in Resources */,
 				E549FEFF18F37AAF009E7BB8 /* splash_iphone5_2.png in Resources */,
+				E5C16A1D18F79E48005D1836 /* backpanel.png in Resources */,
 				E5608FEE18F47D22008D2C0E /* hit.mp3 in Resources */,
 				E549FC7A18F3795D009E7BB8 /* Icon-Small@2x.png in Resources */,
 				E549FC6C18F3795D009E7BB8 /* Icon-72@2x.png in Resources */,
